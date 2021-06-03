@@ -60,7 +60,7 @@ namespace Phoneword
         private void OnTranslate(object sender, EventArgs e)
         {
             string enteredNumber = phoneNumberText.Text;
-            translatedNumber = Phoneword.PhonewordTranslator.ToNumber(enteredNumber);
+            translatedNumber = PhonewordXAML.PhonewordTranslator.ToNumber(enteredNumber);
 
             if (!string.IsNullOrEmpty(translatedNumber))
             {

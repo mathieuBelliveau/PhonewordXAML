@@ -4,9 +4,12 @@
              x:Class="PhonewordXAML.MainPage"
              xmlns:local="clr-namespace:PhonewordXAML">
 
-    <StackLayout>
+    <StackLayout Padding="20">
+        <Label Text="Enter word: " FontSize="Large"/>
+        <Entry Text="123-456-7890" x:Name="phoneNumberText"/>
         <Button x:Name="translateButton" Clicked="OnTranslate"
             TextColor="{x:Static local:SharedResources.ButtonTextColor}"
+                Text="Translate"
             BackgroundColor="{x:Static local:SharedResources.ButtonBkColor}"/>
         <Button x:Name="callButton" Clicked="OnCall"/>
     </StackLayout>

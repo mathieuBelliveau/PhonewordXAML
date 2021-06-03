@@ -19,8 +19,8 @@ namespace PhonewordXAML
         //Logic for TranslateButton
         private void OnTranslate(object sender, EventArgs e)
         {
-            string enteredNumber = "";//phoneNumberText.Text;
-            translatedNumber = Phoneword.PhonewordTranslator.ToNumber(enteredNumber);
+            string enteredNumber = phoneNumberText.Text;
+            translatedNumber = PhonewordXAML.PhonewordTranslator.ToNumber(enteredNumber);
 
             if (!string.IsNullOrEmpty(translatedNumber))
             {
