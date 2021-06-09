@@ -11,7 +11,7 @@
             TextColor="{x:Static local:SharedResources.ButtonTextColor}"
                 Text="Translate"
             BackgroundColor="{x:Static local:SharedResources.ButtonBkColor}"/>
-        <Button x:Name="callButton" Clicked="OnCall"/>
+        <Button x:Name="callButton" Clicked="OnCall" Text="Call" IsEnabled="False"/>
     </StackLayout>
 
 </ContentPage>
